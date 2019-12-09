@@ -210,6 +210,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Ball.cs" t="Include" />
           <e p="SceneController.cs" t="Include" />
           <e p="Transition.cs" t="Include" />
         </e>
