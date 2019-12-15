@@ -214,8 +214,10 @@
           <e p="Deadzone.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="PaddleController.cs" t="Include" />
+          <e p="Plant.cs" t="Include" />
           <e p="SceneController.cs" t="Include" />
           <e p="Transition.cs" t="Include" />
+          <e p="WaterSource.cs" t="Include" />
         </e>
         <e p="Spine" t="Include">
           <e p="Editor" t="Include">
