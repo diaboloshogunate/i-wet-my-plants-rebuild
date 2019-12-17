@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 public class Plant : MonoBehaviour
 {
     private Animator animator;
+    public UnityEvent levelUpEvent;
+    public UnityEvent levelDownEvent;
     [SerializeField] private int level = 1;
     [SerializeField] private int maxLevel = 1;
     [SerializeField] private float consumption = 5f;
@@ -37,5 +40,16 @@ public class Plant : MonoBehaviour
         player.UseWater(this.consumption);
         this.level = Mathf.Clamp(this.level + 1, 0, this.maxLevel);
         this.animator.SetInteger("Level", this.level);
+        this.levelUpEvent.Invoke();
+    }
+
+    public int GetMaxLevel()
+    {
+        return this.maxLevel;
+    }
+
+    public int GetLevel()
+    {
+        return this.level;
     }
 }
