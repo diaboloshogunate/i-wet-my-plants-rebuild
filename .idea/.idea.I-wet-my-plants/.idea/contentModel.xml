@@ -218,6 +218,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Ball.cs" t="Include" />
+          <e p="Cloud.cs" t="Include" />
           <e p="Deadzone.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="PaddleController.cs" t="Include" />

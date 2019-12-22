@@ -50,3 +50,6 @@ TagManager:
   - name: Entity
     uniqueID: 801246835
     locked: 0
+  - name: Sky
+    uniqueID: 77002877
+    locked: 0
