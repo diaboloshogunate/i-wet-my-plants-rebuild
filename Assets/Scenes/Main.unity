@@ -277,6 +277,11 @@ PrefabInstance:
       propertyPath: quitOnEscape
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 255740898904483090, guid: c5ddff05347d4ff4ba28fde32b04f5ac,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5ddff05347d4ff4ba28fde32b04f5ac, type: 3}
 --- !u!1 &10515621
