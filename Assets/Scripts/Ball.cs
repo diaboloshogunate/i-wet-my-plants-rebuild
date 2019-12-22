@@ -72,13 +72,6 @@ public class Ball : MonoBehaviour
             return;
         }
         
-        if (other.gameObject.CompareTag("Plant"))
-        {
-            this.UseWater(this.hitUsage);
-            //@TODO water plant
-            return;
-        }
-        
         if (other.gameObject.CompareTag("Water"))
         {
             //@TODO absorb water
