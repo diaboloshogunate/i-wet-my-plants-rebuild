@@ -1720,6 +1720,7 @@ GameObject:
   - component: {fileID: 1161215956}
   - component: {fileID: 1161215955}
   - component: {fileID: 1161215959}
+  - component: {fileID: 1161215960}
   - component: {fileID: 1161215958}
   m_Layer: 0
   m_Name: Ball
@@ -1786,7 +1787,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 801246835
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 029e8c834017a304293b25165dbb775a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1806,7 +1807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161215954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.13, y: -3.36, z: 0}
+  m_LocalPosition: {x: -1.15, y: -3.35, z: -3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1862,6 +1863,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.245
+--- !u!114 &1161215960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161215954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac97f20e645a58348825084c4f35a892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnUpdate: 1
 --- !u!1 &1241507980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 6145910762913902012, guid: 7ffadcab9bbb50f47bc7725633442574,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 300.7148
+      value: 300.8064
       objectReference: {fileID: 0}
     - target: {fileID: 6145910762913902012, guid: 7ffadcab9bbb50f47bc7725633442574,
         type: 3}
@@ -2333,6 +2347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145910762913902011, guid: 7ffadcab9bbb50f47bc7725633442574,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ffadcab9bbb50f47bc7725633442574, type: 3}
@@ -2615,7 +2634,7 @@ PrefabInstance:
     - target: {fileID: 334940243217287996, guid: 83464e053c6f81b4fbce798071e1cd4b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.6
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: 334940243217287996, guid: 83464e053c6f81b4fbce798071e1cd4b,
         type: 3}
@@ -2625,7 +2644,7 @@ PrefabInstance:
     - target: {fileID: 334940243217287996, guid: 83464e053c6f81b4fbce798071e1cd4b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 220.77
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 334940243217287996, guid: 83464e053c6f81b4fbce798071e1cd4b,
         type: 3}
@@ -2671,6 +2690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 334940243217287986, guid: 83464e053c6f81b4fbce798071e1cd4b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83464e053c6f81b4fbce798071e1cd4b, type: 3}

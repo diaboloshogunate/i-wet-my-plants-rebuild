@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 334940243217287996}
+  - component: {fileID: 334940243217287998}
   - component: {fileID: 334940243217287997}
   - component: {fileID: 334940243217287986}
   - component: {fileID: 334940243217287987}
+  - component: {fileID: 5173276358840893974}
   - component: {fileID: 334940243217287999}
-  - component: {fileID: 334940243217287998}
   m_Layer: 0
   m_Name: SideTree
   m_TagString: Plant
@@ -35,6 +36,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &334940243217287998
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334940243217287984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11219573, y: 0.23202991}
+  serializedVersion: 2
+  m_Radius: 0.6672199
 --- !u!33 &334940243217287997
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -117,6 +134,18 @@ MonoBehaviour:
   _animationName: Side_Tree_1
   loop: 1
   timeScale: 1
+--- !u!114 &5173276358840893974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334940243217287984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac97f20e645a58348825084c4f35a892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &334940243217287999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,19 +171,3 @@ MonoBehaviour:
   level: 1
   maxLevel: 4
   consumption: 5
---- !u!58 &334940243217287998
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334940243217287984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.11219573, y: 0.23202991}
-  serializedVersion: 2
-  m_Radius: 0.6672199
