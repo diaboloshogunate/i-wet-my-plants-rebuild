@@ -1713,6 +1713,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2834ff493edafa4d932570322059dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &935782594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935782595}
+  m_Layer: 0
+  m_Name: spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935782595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935782594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1105704571}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105704568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,9 +1839,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105704568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24639231, y: 2.98, z: 0}
+  m_LocalPosition: {x: 2.29, y: 0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 935782595}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1827,11 +1858,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7a3d4e4d933894a9408d8582f3da7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puddle: {fileID: 0}
-  spawnXBounds: {x: 0, y: 0}
-  spawnYBounds: {x: 0, y: 0}
-  minTargetDistance: 2
-  respawnTime: {x: 0, y: 0}
+  puddle: {fileID: 1091507578540435286, guid: 29384d5b55a975e46933798a902e8abf, type: 3}
+  puddleSpawnPosition: {fileID: 935782595}
+  spawnXBounds: {x: -4, y: 4}
+  spawnYBounds: {x: 0, y: 3}
+  minTargetDistance: 8
+  respawnTime: {x: 5, y: 20}
+  speed: {x: 0.25, y: 0.75}
 --- !u!1 &1161215954
 GameObject:
   m_ObjectHideFlags: 0
