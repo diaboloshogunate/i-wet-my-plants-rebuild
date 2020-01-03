@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
@@ -124,7 +125,8 @@ public class Ball : MonoBehaviour
 
     public void Tilt()
     {
-        //@TODO
+        rigidbody.velocity = Quaternion.AngleAxis(Random.Range(-15f, 15f), Vector3.forward) * rigidbody.velocity;
+        this.IncreaseSpeed();
     }
 
     private void PaddleBounce(Collision2D other)

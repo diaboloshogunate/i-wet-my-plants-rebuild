@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Cinemachine;
 using UnityEngine;
 using Rewired;
 
@@ -15,6 +16,7 @@ public class PaddleController : MonoBehaviour
     private Ball ball;
     private Vector2 yzPosition = Vector2.zero; 
     private Vector2 direction = Vector2.zero;
+    [SerializeField] private Shake shake;
     [SerializeField] private float speed;
     [SerializeField] private float minBounds;
     [SerializeField] private float maxBounds;
@@ -48,6 +50,12 @@ public class PaddleController : MonoBehaviour
         if (this.player.GetButton("Splash"))
         {
             Debug.Log("Splash");
+        }
+
+        if (this.player.GetButton("Tilt"))
+        {
+            this.shake.Begin(0.5f,1,0.25f);
+            this.ball.Tilt();
         }
 
         if (this.isGamepad)
