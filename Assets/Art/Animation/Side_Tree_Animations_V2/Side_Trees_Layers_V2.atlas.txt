@@ -1,0 +1,55 @@
+
+Side_Trees_Layers_V2.png
+size: 1008,738
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Grass4
+  rotate: true
+  xy: 2, 2
+  size: 296, 368
+  orig: 299, 374
+  offset: 1, 5
+  index: -1
+Leaves
+  rotate: false
+  xy: 744, 18
+  size: 257, 323
+  orig: 259, 323
+  offset: 2, 0
+  index: -1
+Leaves4
+  rotate: true
+  xy: 372, 40
+  size: 259, 323
+  orig: 259, 323
+  offset: 0, 0
+  index: -1
+Side_Tree_1
+  rotate: false
+  xy: 498, 302
+  size: 244, 434
+  orig: 244, 434
+  offset: 0, 0
+  index: -1
+Side_Tree_2
+  rotate: false
+  xy: 250, 301
+  size: 246, 435
+  orig: 246, 435
+  offset: 0, 0
+  index: -1
+Side_Tree_3
+  rotate: false
+  xy: 2, 300
+  size: 246, 436
+  orig: 246, 436
+  offset: 0, 0
+  index: -1
+Side_Tree_4
+  rotate: false
+  xy: 744, 343
+  size: 262, 393
+  orig: 262, 393
+  offset: 0, 0
+  index: -1
