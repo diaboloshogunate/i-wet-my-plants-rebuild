@@ -10,6 +10,7 @@ using Rewired;
 public class PaddleController : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
+    private bool isLocked = false;
     private Camera camera;
     private Player player;
     private bool isGamepad = false;
@@ -42,6 +43,8 @@ public class PaddleController : MonoBehaviour
 
     void Update()
     {
+        if (this.isLocked) return;
+        
         if (this.player.GetButton("Fire") && this.ball.IsLocked())
         {
             this.ball.Fire();
@@ -76,6 +79,12 @@ public class PaddleController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (this.isLocked)
+        {
+            this.rigidbody.velocity = Vector2.zero;
+            return;
+        }
+        
         this.rigidbody.velocity = this.direction * this.speed;
     }
 
@@ -86,5 +95,10 @@ public class PaddleController : MonoBehaviour
     
     private void CheckGamepad(ControllerStatusChangedEventArgs args) {
         this.CheckGamepad();
+    }
+
+    public void LockInput()
+    {
+        this.isLocked = true;
     }
 }

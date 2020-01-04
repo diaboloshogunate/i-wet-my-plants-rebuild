@@ -73,12 +73,6 @@ public class Ball : MonoBehaviour
             return;
         }
         
-        if (other.gameObject.CompareTag("Water"))
-        {
-            //@TODO absorb water
-            return;
-        }
-        
         this.UseWater(this.hitUsage);
     }
 
@@ -172,5 +166,10 @@ public class Ball : MonoBehaviour
     public float GetWaterFill()
     {
         return this.water / this.waterCapacity;
+    }
+
+    public void LockMovement()
+    {
+        this.rigidbody.velocity = Vector2.zero;
     }
 }

@@ -19,7 +19,7 @@ public class Plant : MonoBehaviour
     private void Start()
     {
         skeletonAnimation = GetComponent<SkeletonAnimation>();
-        skeletonAnimation.AnimationState.SetAnimation(0, "Side_Tree_"+this.level, true);
+        skeletonAnimation.AnimationState.SetAnimation(0, "Level"+this.level, true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -42,7 +42,7 @@ public class Plant : MonoBehaviour
     {
         player.UseWater(this.consumption);
         this.level = Mathf.Clamp(this.level + 1, 0, this.maxLevel);
-        skeletonAnimation.AnimationState.SetAnimation(0, "Side_Tree_"+this.level, true);
+        skeletonAnimation.AnimationState.SetAnimation(0, "Level"+this.level, true);
         this.levelUpEvent.Invoke();
     }
 

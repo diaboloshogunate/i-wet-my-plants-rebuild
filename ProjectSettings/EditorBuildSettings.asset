@@ -14,12 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: d79c83236503d934bae129e27550e0c1
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 2704b30791a25e74ca52951bf7c2f2a0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 03495af2114d48b4986046d4c08e7175
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: cea01c4550c62944baab747e58ae39a1
   - enabled: 1
     path: Assets/Scenes/Jesse.unity
     guid: 2cda990e2423bbf4892e6590ba056729

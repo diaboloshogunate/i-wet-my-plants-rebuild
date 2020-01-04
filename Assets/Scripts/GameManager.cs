@@ -8,7 +8,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private SceneController sceneController;
+    [SerializeField] private PaddleController paddle;
     [SerializeField] private Ball ball;
+    [SerializeField] private int lives = 3;
+    [SerializeField] private GameObject[] lifeIcons;
     [SerializeField] private Image waterMeter;
     [SerializeField] private Image progressMeter;
     [SerializeField] private Image flower;
@@ -37,7 +40,9 @@ public class GameManager : MonoBehaviour
 
     private void OnKilled()
     {
-        if (this.ball.GetWaterFill() > 0f)
+        this.lives -= 1;
+        this.lifeIcons[this.lives].SetActive(false);
+        if (this.lives > 0)
         {
             this.ball.Respawn();
             return;
@@ -70,12 +75,25 @@ public class GameManager : MonoBehaviour
         if (this.progressMeter.fillAmount == 1f)
         {
             this.flower.enabled = true;
+            this.Win();
+            return;
         }
-        Debug.Log("Level up " + this.progressMeter.fillAmount);
+
+        this.flower.enabled = false;
+    }
+
+    private void Win()
+    {
+        this.paddle.LockInput();
+        this.ball.LockMovement();
+        this.sceneController.SetScene("Win");
+        this.sceneController.LoadNextScene();
     }
 
     private void GameOver()
     {
+        this.paddle.LockInput();
+        this.ball.LockMovement();
         this.sceneController.SetScene("GameOver");
         this.sceneController.LoadNextScene();
     }
