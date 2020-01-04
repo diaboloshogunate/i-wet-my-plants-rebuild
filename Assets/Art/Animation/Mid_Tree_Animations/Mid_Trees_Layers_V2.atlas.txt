@@ -1,0 +1,55 @@
+
+Mid_Trees_Layers_V2.png
+size: 581,606
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Grass
+  rotate: false
+  xy: 2, 313
+  size: 336, 291
+  orig: 338, 294
+  offset: 1, 1
+  index: -1
+Leaves3
+  rotate: false
+  xy: 362, 20
+  size: 192, 130
+  orig: 195, 130
+  offset: 0, 0
+  index: -1
+Leaves4
+  rotate: false
+  xy: 362, 152
+  size: 194, 130
+  orig: 195, 130
+  offset: 0, 0
+  index: -1
+Tree1 C
+  rotate: false
+  xy: 187, 2
+  size: 173, 280
+  orig: 174, 280
+  offset: 1, 0
+  index: -1
+Tree2 copy 2
+  rotate: false
+  xy: 2, 2
+  size: 183, 280
+  orig: 184, 280
+  offset: 1, 0
+  index: -1
+Tree3
+  rotate: true
+  xy: 340, 445
+  size: 159, 239
+  orig: 159, 239
+  offset: 0, 0
+  index: -1
+Tree4
+  rotate: true
+  xy: 340, 284
+  size: 159, 238
+  orig: 159, 238
+  offset: 0, 0
+  index: -1
