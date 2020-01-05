@@ -1,0 +1,55 @@
+
+Top_Trees.png
+size: 1242,332
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Leaves2
+  rotate: false
+  xy: 883, 227
+  size: 355, 103
+  orig: 358, 105
+  offset: 1, 1
+  index: -1
+Leaves3
+  rotate: false
+  xy: 883, 124
+  size: 357, 101
+  orig: 360, 103
+  offset: 1, 1
+  index: -1
+Leaves4
+  rotate: false
+  xy: 883, 21
+  size: 357, 101
+  orig: 360, 107
+  offset: 1, 5
+  index: -1
+Top_Tree1
+  rotate: true
+  xy: 2, 3
+  size: 327, 219
+  orig: 330, 220
+  offset: 3, 0
+  index: -1
+Top_Tree2
+  rotate: true
+  xy: 663, 3
+  size: 327, 218
+  orig: 330, 218
+  offset: 3, 0
+  index: -1
+Top_Tree3
+  rotate: true
+  xy: 223, 2
+  size: 328, 218
+  orig: 330, 218
+  offset: 2, 0
+  index: -1
+Top_Tree4
+  rotate: true
+  xy: 443, 2
+  size: 328, 218
+  orig: 330, 218
+  offset: 2, 0
+  index: -1
