@@ -1,26 +1,26 @@
 
 Top_Trees.png
-size: 1242,332
+size: 1244,332
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Leaves2
   rotate: false
-  xy: 883, 227
+  xy: 883, 123
   size: 355, 103
   orig: 358, 105
   offset: 1, 1
   index: -1
 Leaves3
   rotate: false
-  xy: 883, 124
-  size: 357, 101
+  xy: 883, 228
+  size: 359, 102
   orig: 360, 103
-  offset: 1, 1
+  offset: 0, 1
   index: -1
 Leaves4
   rotate: false
-  xy: 883, 21
+  xy: 883, 20
   size: 357, 101
   orig: 360, 107
   offset: 1, 5
